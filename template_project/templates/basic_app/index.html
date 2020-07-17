@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+{% extends 'basic_app/basic.html' %}
+{% block body_block %}
+
+    <h1>Welcome to Index</h1>
+    <!-- String operation to uppercase the contents of text -->
+    <h2>{{ text|upper }}</h2>
+    <!-- custom filter to use custon function cut to cut hello in the text -->
+    <h2>{{ text|cut:"hello"}}</h2>
+    <p></p>
+    <!-- Arithmatic operation to add number -->
+    <h2>{{ number|add:"200" }}</h2>
+
+{% endblock %}
